@@ -43,12 +43,12 @@ public class SensorDisplay extends Activity {
                     //latitudeTxt.setText(latitudeStr);
                     //longitudeTxt.append("\n" +intent.getExtras().get("longitude"));
                     if(intent.getExtras().get("latitude") != null)
-                        latitudeTxt.setText("\n" +intent.getExtras().get("latitude"));
+                        latitudeTxt.setText(" " +intent.getExtras().get("latitude"));
                     if(intent.getExtras().get("longitude") != null)
-                        longitudeTxt.setText("\n" + intent.getExtras().get("longitude"));
-                    aXTxt.setText("\n" +intent.getExtras().get("ax"));
-                    aYTxt.setText("\n" + intent.getExtras().get("ay"));
-                    aZTxt.setText("\n" + intent.getExtras().get("az"));
+                        longitudeTxt.setText(" " + intent.getExtras().get("longitude"));
+                    aXTxt.setText(" " +intent.getExtras().get("ax"));
+                    aYTxt.setText(" " + intent.getExtras().get("ay"));
+                    aZTxt.setText(" " + intent.getExtras().get("az"));
 
 
                 }

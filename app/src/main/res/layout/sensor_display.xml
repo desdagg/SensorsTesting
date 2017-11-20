@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -16,46 +17,67 @@
     <TextView
         android:id="@+id/longitudeView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button"
+        android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="53dp"
         android:text="longitude" />
 
     <TextView
         android:id="@+id/latitudeView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/longitudeView"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/longitudeView"
-        android:layout_marginTop="34dp"
         android:text="latitude" />
 
     <TextView
         android:id="@+id/textViewX"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button"
-        android:layout_below="@+id/latitudeView"
-        android:layout_marginTop="36dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/textViewY"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textViewX"
-        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/textViewZ"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/textViewY"
-        android:layout_marginEnd="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
         android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/latitudeView"
+        android:text="X" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewX"
+        android:text="Y" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewY"
+        android:text="Z" />
 
 
 </RelativeLayout>
